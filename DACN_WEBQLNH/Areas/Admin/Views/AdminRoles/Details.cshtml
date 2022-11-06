@@ -1,0 +1,57 @@
+﻿@model DACN_WEBQLNH.Models.Role
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid px-4" style="text-align: center;">
+            <h1 class="mt-4">Thông Tin Quyền Truy Cập</h1>
+            <ol class="breadcrumb mb-4">
+                <a asp-area="Admin" asp-controller="HomeAdmin" asp-action="Index" class="breadcrumb-item"><i class="fa-solid fa-house"></i>HomeAdmin</a>
+                <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="AdminRoles" asp-action="Index">Quyền Truy Cập</a></li>
+                <li class="breadcrumb-item active">Thông Tin Quyền Truy Cập</li>
+            </ol>
+            <div class="card mb-4" style="margin: auto; width: 80%; border: 3px solid black; padding: 20px;line-height: 2.5;">
+                <div class="card-body">
+                    <div class="table-responsive" style="margin: auto; width: 60%; line-height: 2.5;">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ID Quyền Truy Cập: </td>
+                                    <td style="padding: 7px;">@Model.RoleId</td>
+                                </tr>
+                                <tr>
+                                    <td>Tên Quyền Truy Cập: </td>
+                                    <td style="padding:7px;">@Model.RoleName</td>
+                                </tr>
+                                <tr>
+                                    <td>Mô Tả:</td>
+                                    <td style="padding:7px;">@Model.MoTa</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 100vh"></div>
+        </div>
+    </main>
+
+
+    <!--Footer-->
+    <footer class="py-4 bg-light mt-auto">
+        <div class="container-fluid px-4">
+            <div class="d-flex align-items-center justify-content-between small">
+                <div class="text-muted">Đồ Án Chuyên Ngành; Your Website 2022</div>
+                <div>
+                    <a href="#">Dương Ngọc Thảo</a>
+                    &middot;
+                    <a href="#">Lê Cẩm Thúy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>

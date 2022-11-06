@@ -1,0 +1,128 @@
+﻿
+<div id="layoutSidenav_nav">
+    <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+        <div class="sb-sidenav-menu">
+            <div class="nav">
+                <a class="nav-link" href="index.html">
+                    <div class="sb-nav-link-icon"><i class="fa-solid fa-house"></i></div>
+                    Trang Chủ
+                </a>
+                <div class="sb-sidenav-menu-heading">Interface</div>
+                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                    <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                    Layouts
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                </a>
+                <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                    <nav class="sb-sidenav-menu-nested nav">
+                        <a class="nav-link" href="layout-static.html">Static Navigation</a>
+                        <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
+                    </nav>
+                </div>
+                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                    <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                    Pages
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                </a>
+                <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                    <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                            Authentication
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="login.html">Login</a>
+                                <a class="nav-link" href="register.html">Register</a>
+                                <a class="nav-link" href="password.html">Forgot Password</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                            Error
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="401.html">401 Page</a>
+                                <a class="nav-link" href="404.html">404 Page</a>
+                                <a class="nav-link" href="500.html">500 Page</a>
+                            </nav>
+                        </div>
+                    </nav>
+                </div>
+
+                <!--quan ly start-->
+
+                <div class="sb-sidenav-menu-heading">QUẢN LÝ</div>
+                <a class="nav-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseQLDN" aria-expanded="false" aria-controls="collapseQLHS">
+                    <div class="sb-nav-link-icon"><i class="fa-solid fa-building"></i></div>
+                    Quản lý Doanh nghiệp
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                </a>
+                <div class="collapse" id="collapseQLDN" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                    <nav class="sb-sidenav-menu-nested nav">
+                        <a class="nav-link" asp-area="Admin" asp-controller="DoanhNghieps" asp-action="Index">Doanh nghiệp</a>
+                        <a class="nav-link" href="layout-static.html">Hồ sơ pháp lý</a>
+                        <a class="nav-link" href="layout-sidenav-light.html">Hồ sơ thẩm định</a>
+                        <a class="nav-link" href="layout-sidenav-light.html">Hồ sơ báo cáo tài chính</a>
+                        <a class="nav-link" href="layout-sidenav-light.html">Hồ sơ phương án vay</a>
+                        <a class="nav-link" href="layout-sidenav-light.html">Hồ sơ tài sản db</a>
+                        <a class="nav-link" href="layout-sidenav-light.html">Hồ sơ vay doanh nghiệp</a>
+                    </nav>
+                </div>
+               
+                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseQLKH" aria-expanded="false" aria-controls="collapseQLKH">
+                    <div class="sb-nav-link-icon"><i class="fa-solid fa-street-view"></i></div>
+                    Quản lý Khách hàng
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                </a>
+                <div class="collapse" id="collapseQLKH" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                    <nav class="sb-sidenav-menu-nested nav">
+                        <a class="nav-link" href="layout-static.html">Thẻ tín dụng</a>
+                        <a class="nav-link" href="layout-sidenav-light.html">Hồ sơ tín dụng</a>
+                    </nav>
+                </div>
+
+                <a class="nav-link" href="index.html">
+                    <div class="sb-nav-link-icon"><i class="fa-solid fa-city"></i></div>
+                    Quản lý Công ty thẩm định
+                </a>
+
+                <a class="nav-link" href="index.html">
+                    <div class="sb-nav-link-icon"><i class="fa-solid fa-people-arrows"></i></div>
+                    Quản lý Nhân viên
+                </a>
+
+                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseQLTK" aria-expanded="false" aria-controls="collapseQLTK">
+                    <div class="sb-nav-link-icon"><i class="fa-solid fa-users"></i></div>
+                    Quản lý Hệ thống
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                </a>
+                <div class="collapse" id="collapseQLTK" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                    <nav class="sb-sidenav-menu-nested nav">
+                        <a asp-area="Admin" asp-controller="AdminRoles" asp-action="Index" class="nav-link">Quyền truy cập</a>
+                        <a asp-area="Admin" asp-controller="TaiKhoans" asp-action="Index" class="nav-link">Tài khoản nhân viên</a>
+                        <a class="nav-link" href="layout-sidenav-light.html">Tài khoản khách hàng</a>
+                    </nav>
+                </div>
+                <!--quan ly end-->
+
+
+                <div class="sb-sidenav-menu-heading">Addons</div>
+                <a class="nav-link" href="charts.html">
+                    <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                    Charts
+                </a>
+                <a class="nav-link" href="tables.html">
+                    <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                    Tables
+                </a>
+            </div>
+        </div>
+        @*<div class="sb-sidenav-footer">
+            <div class="small">Logged in as:</div>
+            Start Bootstrap
+        </div>*@
+    </nav>
+</div>
+
